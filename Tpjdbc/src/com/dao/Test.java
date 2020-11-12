@@ -1,14 +1,21 @@
 package com.dao;
 
+import java.time.LocalDate;
+
+import com.model.User;
 
 public class Test {
 
 	public static void main(String[] args)  {
-		String sql="insert into user values(0,'koko','uu','log','pass','2014-02-10')";
-		DBInteraction.connect();
-		int nb=DBInteraction.Maj(sql);
-		DBInteraction.disconnect();
-System.out.println(nb);
+		UserManager um=new UserManager();
+		//int nb=um.adduser("fff", "bbb", "eee", "ddd", LocalDate.now());
+		//System.out.println(nb);
+
+	User us = um.authentificate("eee", "ddd");
+	if(us!=null)
+		System.out.println("Bonjour Mr "+us.getNom());
+	else
+		System.err.println("login ou password incorrect..!");
 	}
 
 }
