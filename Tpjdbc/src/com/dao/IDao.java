@@ -28,6 +28,6 @@ public interface IDao {
 	public int accpter(int idr, int ids);
 	
 	public List<Invitation> invitations(int idu);
-	
+	public List<User> amis(int idu);
 	
 }
