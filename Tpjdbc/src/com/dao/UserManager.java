@@ -18,6 +18,7 @@ public class UserManager implements IDao {
 		DBInteraction.disconnect();
 		return nb;
 	}
+	
 
 	@Override
 	public int adduser(User u) {
