@@ -43,10 +43,6 @@ public class User {
 	public void setDate(LocalDate date) {
 		this.date = date;
 	}
-	public User() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 	public User(String nom, String prenom, String log, String pass, LocalDate date) {
 		super();
 		this.nom = nom;
@@ -55,6 +51,11 @@ public class User {
 		this.pass = pass;
 		this.date = date;
 	}
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
 	
 	
 }

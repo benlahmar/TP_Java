@@ -27,7 +27,7 @@ public class UserManager implements IDao {
 	}
 
 	@Override
-	public User authentificate(String log, String pass) {
+	public User authentification(String log, String pass) {
 		User u=null;
 		DBInteraction.connect();
 		ResultSet rs = DBInteraction.Select("select * from user where log='"+log+ "' and pass='"+pass+"'");
