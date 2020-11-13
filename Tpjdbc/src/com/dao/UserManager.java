@@ -3,7 +3,9 @@ package com.dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
+import java.util.List;
 
+import com.model.Invitation;
 import com.model.User;
 
 public class UserManager implements IDao {
@@ -42,6 +44,48 @@ public class UserManager implements IDao {
 			e.printStackTrace();
 		}
 		return u;
+	}
+
+	@Override
+	public int updatepassword(String pass, int idu) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<User> allUsers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean isLogExist(String log) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public int inviter(int idus, int idur) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int inviter(User us, User ur) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int accpter(int idr, int ids) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<Invitation> invitations(int idu) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
